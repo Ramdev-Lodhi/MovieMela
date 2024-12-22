@@ -1,14 +1,39 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Movies } from "./pages/Movies";
+import { Contact } from "./pages/Contact";
+import AppLayout from "./components/UI/layout/AppLayout";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/movies",
+          element: <Movies />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+      ],
+    },
+  ]);
   return (
     <>
-      <h1>Hello ! Ram</h1>
+      <RouterProvider router={router} />
     </>
   );
 }
