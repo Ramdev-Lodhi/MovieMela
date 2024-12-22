@@ -60,7 +60,7 @@ export const Header = () => {
                     contact
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink
                     to=""
                     className={({ isActive }) =>
@@ -69,7 +69,7 @@ export const Header = () => {
                   >
                     SIGN IN
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </nav>
             {/* <div className="sing_in_up">
