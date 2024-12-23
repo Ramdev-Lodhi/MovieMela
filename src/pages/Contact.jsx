@@ -25,7 +25,6 @@ export const Contact = () => {
                       placeholder="Enter full name"
                     />
                   </div>
-
                   <div>
                     <label htmlFor="email">email address</label>
                     <input
