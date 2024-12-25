@@ -1,5 +1,5 @@
 {
-  "name": "react_router",
+  "name": "movie_mela",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "movie_mela": "file:",
     "react": "^19.0.0",
-    "react_router": "file:",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.0"
