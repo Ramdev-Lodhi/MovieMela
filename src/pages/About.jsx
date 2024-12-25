@@ -1,13 +1,15 @@
 export const About = () => {
   return (
     <>
-      <section className="container ">
+      <section className="container">
         <section className="about-hero">
           <h1>About MovieMela</h1>
-          <p>Discover the magic of movies with MovieMela!</p>
         </section>
+        <p className="intro-text">
+          Discover the magic of movies with MovieMela!
+        </p>
         <section className="about-content">
-          <div>
+          <div className="content-section">
             <h2>Our Story</h2>
             <p>
               MovieMela was born out of our love for cinema and storytelling.
@@ -15,7 +17,9 @@ export const About = () => {
               comedies, thrilling dramas, or inspiring documentaries, MovieMela
               is your go-to destination for everything movies.
             </p>
+          </div>
 
+          <div className="content-section">
             <h2>Why MovieMela?</h2>
             <ul>
               <li>
@@ -35,7 +39,9 @@ export const About = () => {
                 own watchlist for must-watch movies.
               </li>
             </ul>
+          </div>
 
+          <div className="content-section">
             <h2>Our Vision</h2>
             <p>
               At MovieMela, we believe that movies have the power to bring
@@ -43,11 +49,13 @@ export const About = () => {
               vision is to build a community of movie lovers where everyone can
               share their passion for cinema and find their next favorite film.
             </p>
+          </div>
 
+          <div className="content-section creator-card">
             <h2>About the Creator</h2>
             <div className="creator-profile">
               <img
-                src="./ram.jpg"
+                src="./mr.ramdevlodhi.jpg"
                 alt="Ramdev Lodhi"
                 className="creator-image"
               />
@@ -68,7 +76,9 @@ export const About = () => {
                 </p>
               </div>
             </div>
+          </div>
 
+          <div className="content-section">
             <h2>Join Us</h2>
             <p>
               Join our growing community of film enthusiasts and take your
