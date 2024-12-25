@@ -1,10 +1,18 @@
-import { NavLink } from "react-router-dom";
-
+import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { getMoviesData } from "../../api/GetAPIData";
+import { MdSearch } from "react-icons/md";
 export const Header = () => {
+  const navigate = useNavigate();
+  const [search, setSearch] = useState("");
   const getNavLinkStyle = ({ isActive }) => {
     return {
       color: isActive ? "blue" : "white",
     };
+  };
+  const handleSearch = () => {
+    navigate(`/movies?search=${search}`);
+    setSearch("");
   };
 
   return (
@@ -13,8 +21,21 @@ export const Header = () => {
         <section className="top_txt">
           <div className="head container">
             <div className="head_txt">
-              <p>
+              <p className="flex justify-between ">
                 <img src="./MovieMela.png" alt="logo" />
+                <div className="search-container">
+                  <input
+                    type="text"
+                    value={search}
+                    className="w-96 h-16 text-black search-input"
+                    placeholder="Search....."
+                    onChange={(e) => setSearch(e.target.value)}
+                    required
+                  />
+                  <button onClick={handleSearch} className="search-icon-btn">
+                    <MdSearch />
+                  </button>
+                </div>
               </p>
             </div>
             <nav className="navbar">

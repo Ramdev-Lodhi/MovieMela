@@ -11,6 +11,15 @@ export const Contact = () => {
 
         <div className="section-contact">
           <div className=" grid grid-two--cols">
+            <div className="contact-image">
+              <figure>
+                <img
+                  src="/contact.png"
+                  alt="contact pic"
+                  className="contact_image"
+                />
+              </figure>
+            </div>
             <div className="contact-content">
               <Form method="POST" action="/contact">
                 <div className="grid grid-two-cols mb-3">
@@ -56,7 +65,7 @@ export const Contact = () => {
                 </div>
               </Form>
             </div>
-            <div className="contact-image">
+            {/* <div className="contact-image">
               <figure>
                 <img
                   src="/contact.png"
@@ -64,7 +73,7 @@ export const Contact = () => {
                   className="contact_image"
                 />
               </figure>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

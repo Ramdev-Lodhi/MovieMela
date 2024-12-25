@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <main>
       <section className="section-hero">
-        <div className="container grid grid-two--cols">
+        <div className="home-container grid grid-two--cols">
           <div className="section-hero--content">
             <p className="hero-subheading">
               Explore the Latest in Movie Industries
