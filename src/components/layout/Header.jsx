@@ -14,7 +14,7 @@ export const Header = () => {
           <div className="head container">
             <div className="head_txt">
               <p>
-                <img src="./src/assets/images/Movieweb_Logo.png" alt="logo" />
+                <img src="./MovieMela.png" alt="logo" />
               </p>
             </div>
             <nav className="navbar">

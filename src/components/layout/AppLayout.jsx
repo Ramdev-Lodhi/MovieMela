@@ -1,8 +1,12 @@
 import { Outlet, useNavigation } from "react-router-dom";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
-import { Loading } from "./Loading";
-import { Suspense } from "react";
+import {
+  Loading,
+  MovieCardDetialsAnimation,
+  MovieCardSkeletonAnimation,
+} from "./Loading";
+// import { Suspense } from "react";
 
 const AppLayout = () => {
   const navigation = useNavigation();
@@ -13,11 +17,15 @@ const AppLayout = () => {
       <Header />
       {/* {navigation.state === "loading" ? <Loading /> : <Outlet />} */}
       {navigation.state === "loading" ? (
-        <Loading />
+        navigation.location.pathname === "/movies" ? (
+          <MovieCardSkeletonAnimation />
+        ) : navigation.location.pathname.includes("/movies/") ? (
+          <MovieCardDetialsAnimation />
+        ) : (
+          <Loading />
+        )
       ) : (
-        <Suspense fallback={<Loading />}>
-          <Outlet />
-        </Suspense>
+        <Outlet />
       )}
       <Footer />
     </>
