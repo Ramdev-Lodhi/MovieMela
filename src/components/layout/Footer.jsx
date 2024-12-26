@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="section-footer">
       <div className="footer-container container">
         <div className="content_1">
-          <img src="./MovieMela.png" alt="logo" />
+          <img src="../MovieMela.png" alt="logo" />
           <p>
             Welcome to MovieWeb, your ultimate destination for movie reviews,
             trailers, and the latest entertainment news!

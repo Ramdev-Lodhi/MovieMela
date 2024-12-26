@@ -32,8 +32,8 @@ export const MovieDetails = () => {
   console.log(formattedTime);
 
   return (
-    <li className="hero-container hero-movie-container">
-      <div className="main-container">
+    <li className="hero-container-card-details hero-movie-container">
+      <div className="movie-main-container">
         <figure className="movie">
           <div className="movie__hero">
             <img src={Poster} alt="Rambo" className="movie__img" />

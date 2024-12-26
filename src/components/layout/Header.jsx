@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { getMoviesData } from "../../api/GetAPIData";
 import { MdSearch } from "react-icons/md";
 export const Header = () => {
   const navigate = useNavigate();
@@ -21,8 +20,8 @@ export const Header = () => {
         <section className="top_txt">
           <div className="head container">
             <div className="head_txt">
-              <p className="flex justify-between ">
-                <img src="./MovieMela.png" alt="logo" />
+              <div className="flex justify-between ">
+                <img src="../MovieMela.png" alt="logo" />
                 <div className="search-container">
                   <input
                     type="text"
@@ -36,7 +35,7 @@ export const Header = () => {
                     <MdSearch />
                   </button>
                 </div>
-              </p>
+              </div>
             </div>
             <nav className="navbar">
               <ul>

@@ -4,6 +4,12 @@
   display: flex;
   margin-top: 3.2rem;
 }
+.hero-container-card-details {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-top: 15rem;
+}
 
 .main-container {
   width: 270px;

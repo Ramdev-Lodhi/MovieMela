@@ -42,7 +42,7 @@ export const MovieCardDetialsAnimation = () => {
   const MainContainer = "w-[270px] h-[400px] relative mx-[20px]";
 
   return (
-    <li className="hero-container hero-movie-container">
+    <li className="hero-container-card-details hero-movie-container">
       <div className={`${MainContainer} animate-pulse flex`}>
         <figure className="movie">
           <div className="movie__hero flex w-full">

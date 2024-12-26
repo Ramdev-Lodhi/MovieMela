@@ -6,16 +6,28 @@ export const getMoviesData = async ({ request }) => {
     let allMovies = [];
     const url = new URL(request.url);
     const searchQuery = url.searchParams.get("search") || "";
+    const latestMovies = [
+      "Pushpa",
+      "RRR",
+      "Dangal",
+      "PK",
+      "Drishyam",
+      "Shrikant",
+      "Lagaan",
+      "Sector 36",
+      "Stree",
+      "Kalki",
+    ];
+    for (let page = 1; page <= 10; page++) {
+      const query = searchQuery ? searchQuery : latestMovies[page - 1];
 
-    for (let page = 1; page <= 5; page++) {
-      const query = searchQuery ? searchQuery : "all";
       // const response = await fetch(
       //   `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${
       //     search === "" ? "all" : search
       //   }&page=${page}`
       // );
       const response = await fetch(
-        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}&page=${page}`
+        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}&page=1`
       );
       console.log(page);
 
