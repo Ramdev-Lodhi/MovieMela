@@ -36,7 +36,7 @@ export const MovieDetails = () => {
       <div className="movie-main-container">
         <figure className="movie">
           <div className="movie__hero">
-            <img src={Poster} alt="Rambo" className="movie__img" />
+            <img src={Poster} alt="" className="movie__img" />
           </div>
           <div className="movie__content">
             <div className="movie__title">

@@ -1042,6 +1042,7 @@ li {
   }
   .movie-main-container {
     height: auto;
+    width: 310px;
   }
 }
 
@@ -1049,6 +1050,7 @@ li {
 @media (max-width: 480px) {
   .movie-main-container {
     height: auto;
+    width: 310px;
   }
   .movie {
     width: 100%;
@@ -1062,6 +1064,8 @@ li {
   .movie__content {
     width: 100%;
     padding: 15px;
+    position: relative;
+    z-index: 1;
   }
 
   .movie__description {
@@ -1073,6 +1077,7 @@ li {
     flex: 0 0 40px;
     writing-mode: horizontal-tb;
     font-size: 14px;
+    width: auto;
   }
 
   .heading__primary {
@@ -1086,5 +1091,10 @@ li {
   .movie__detail {
     font-size: 11px;
     margin-right: 8px;
+  }
+  .section-footer {
+    position: relative;
+    z-index: 0;
+    margin-top: 20px;
   }
 }

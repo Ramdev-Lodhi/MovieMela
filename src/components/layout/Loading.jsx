@@ -39,11 +39,9 @@ export const MovieCardSkeletonAnimation = () => {
 };
 
 export const MovieCardDetialsAnimation = () => {
-  const MainContainer = "w-[270px] h-[400px] relative mx-[20px]";
-
   return (
-    <li className="hero-container-card-details hero-movie-container">
-      <div className={`${MainContainer} animate-pulse flex`}>
+    <li className="hero-container-card-details hero-movie-container h-[400px]">
+      <div className="movie-main-container animate-pulse flex">
         <figure className="movie">
           <div className="movie__hero flex w-full">
             <div className="flex items-center justify-center w-full bg-gray-300 rounded dark:bg-gray-300">
@@ -81,7 +79,6 @@ export const MovieCardDetialsAnimation = () => {
               </div>
               <div className="movie__detail flex items-center gap-2">
                 <div className="w-20 h-8 bg-gray-300 rounded"></div>
-                <span className="w-8 h-8 bg-gray-300 rounded-full"></span>
               </div>
             </div>
 
