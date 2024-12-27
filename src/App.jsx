@@ -7,9 +7,11 @@ import { Movies } from "./pages/Movies";
 import { Contact, contactData } from "./pages/Contact";
 import AppLayout from "./components/layout/AppLayout";
 import { ErrorPage } from "./pages/ErrorPage";
-import { getMoviesData } from "./api/GetAPIData";
+// import { getMoviesData } from "./api/GetAPIData";
 import { MovieDetails } from "./components/UI/MovieDetails";
 import { getMovieDetails } from "./api/GetMovieDetails";
+import { getMoviesData } from "./services/GetApiService";
+import { Loading } from "./components/layout/Loading";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +31,7 @@ function App() {
         {
           path: "/movies",
           element: <Movies />,
+          // loader: getMoviesData,
           loader: getMoviesData,
         },
         {
@@ -46,7 +49,7 @@ function App() {
   ]);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div><Loading/></div>}>
       <RouterProvider router={router} />
     </Suspense>
   );
