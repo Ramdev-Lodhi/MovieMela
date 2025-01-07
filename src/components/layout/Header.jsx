@@ -9,9 +9,10 @@ export const Header = () => {
       color: isActive ? "blue" : "white",
     };
   };
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    console.log(e);
     navigate(`/movies?search=${search}`);
-    setSearch("");
+
   };
 
   return (
@@ -28,7 +29,10 @@ export const Header = () => {
                     value={search}
                     className="w-96 h-16 text-black search-input"
                     placeholder="Search....."
-                    onChange={(e) => setSearch(e.target.value)}
+                    onChange={(e) => {
+                      setSearch(e.target.value);
+                      handleSearch(e.target.value);
+                    }}
                     required
                   />
                   <button onClick={handleSearch} className="search-icon-btn">

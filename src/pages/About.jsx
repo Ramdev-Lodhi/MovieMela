@@ -13,7 +13,7 @@ export const About = () => {
             <h2>Our Story</h2>
             <p>
               MovieMela was born out of our love for cinema and storytelling.
-              Whether you're a fan of action-packed blockbusters, romantic
+              Whether you&apos;re a fan of action-packed blockbusters, romantic
               comedies, thrilling dramas, or inspiring documentaries, MovieMela
               is your go-to destination for everything movies.
             </p>
@@ -62,7 +62,7 @@ export const About = () => {
               <div className="creator-details">
                 <h3>Mr. Ramdev Lodhi</h3>
                 <p>
-                  Hi, I'm Ramdev Lodhi, the creator of MovieMela! As a
+                  Hi, I&apos;m Ramdev Lodhi, the creator of MovieMela! As a
                   passionate movie enthusiast and a dedicated developer, I
                   created MovieMela to bring together a community of film
                   lovers. This platform is my effort to make discovering and
@@ -72,7 +72,7 @@ export const About = () => {
                   I hope you enjoy using MovieMela as much as I enjoyed building
                   it. If you have feedback, suggestions, or just want to chat
                   about movies, feel free to connect with me through the contact
-                  page. Let's celebrate the world of cinema together!
+                  page. Let&apos;s celebrate the world of cinema together!
                 </p>
               </div>
             </div>

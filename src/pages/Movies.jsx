@@ -6,6 +6,8 @@ import { getMovies } from "../services/GetApiService";
 export const Movies = () => {
   const [data, setData] = useState([]);
   const moviesData = useLoaderData();
+  console.log(data);
+
   console.log(moviesData);
 
   const getMoviesData = async () => {

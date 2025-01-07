@@ -34,7 +34,9 @@ body {
   padding: 0 32px;
   padding-top: 50px;
   min-width: 320px;
-  background-color: var(--backgroundColor);
+  /* background-color: var(--backgroundColor); */
+  /* background-color: #f4f2ee; */
+  background-color: #f9f6ee;
 }
 h1,
 h2,
