@@ -10,8 +10,10 @@ import { ErrorPage } from "./pages/ErrorPage";
 // import { getMoviesData } from "./api/GetAPIData";
 import { MovieDetails } from "./components/UI/MovieDetails";
 import { getMovieDetails } from "./api/GetMovieDetails";
-import { getMoviesData } from "./services/GetApiService";
+// import { getMoviesData } from "./services/GetApiService";
 import { Loading } from "./components/layout/Loading";
+import { Search } from "./pages/Search";
+import { getSearchData } from "./services/GetApiService";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,7 +34,6 @@ function App() {
           path: "/movies",
           element: <Movies />,
           // loader: getMoviesData,
-          loader: getMoviesData,
         },
         {
           path: "/movies/:movieID",
@@ -43,6 +44,11 @@ function App() {
           path: "/contact",
           element: <Contact />,
           action: contactData,
+        },
+        {
+          path: "/search",
+          element: <Search />,
+          loader: getSearchData,
         },
       ],
     },

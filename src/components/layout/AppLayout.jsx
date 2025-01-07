@@ -4,19 +4,17 @@ import { Header } from "./Header";
 import {
   Loading,
   MovieCardDetialsAnimation,
-  MovieCardSkeletonAnimation,
+  // MovieCardSkeletonAnimation,
 } from "./Loading";
 
 const AppLayout = () => {
   const navigation = useNavigation();
-  console.log(navigation);
+  // console.log(navigation);
   return (
     <>
       <Header />
       {navigation.state !== "idle" ? (
-        navigation.location.pathname === "/movies" ? (
-          <MovieCardSkeletonAnimation />
-        ) : navigation.location.pathname.includes("/movies/") ? (
+        navigation.location.pathname.includes("/movies/") ? (
           <MovieCardDetialsAnimation />
         ) : (
           <Loading />
